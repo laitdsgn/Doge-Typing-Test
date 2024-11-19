@@ -50,7 +50,7 @@ text_input.addEventListener("input", function() {
       } else {
           charSpan.classList.add("red");
           charSpan.classList.remove("green");
-          currentMistakes++; // Count mistakes
+          currentMistakes++; 
       }
     });
   
@@ -58,7 +58,6 @@ text_input.addEventListener("input", function() {
     mistakes.innerText = `MISTAKES: ${mistakesCount}`;
     mistakesDisplay.innerText = `Mistakes: ${mistakesCount}`;
   
-    // End game when the input length matches the displayed text
     if (InputLetters.length === DisplayLetters.length) {
       finish.style.display = "inline";
       gameWindow.style.transform = "translateY(1000px)";
